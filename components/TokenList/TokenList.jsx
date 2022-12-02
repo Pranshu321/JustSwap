@@ -26,7 +26,7 @@ const TokenList = ({ tokenDate, setOpenTokenBox }) => {
       </div>
 
       {tokenList.map((el, i) => (
-        <div className={Style.TokenList_box}>
+        <div key={i + 1} className={Style.TokenList_box}>
           <div className={Style.TokenList_box_info}>
             <p className={Style.TokenList_box_info_symbol}>{el.name}</p>
             <p>

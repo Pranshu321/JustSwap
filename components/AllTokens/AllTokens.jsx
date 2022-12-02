@@ -31,7 +31,7 @@ const AllTokens = ({ allTokenList }) => {
         </div>
 
         {allTokenList.map((el, i) => (
-          <div className={Style.AllTokens_box_list}>
+          <div key={i + 1} className={Style.AllTokens_box_list}>
             <p className={Style.hide}>{el.number}</p>
             <p className={Style.AllTokens_box_list_para}>
               <small>
