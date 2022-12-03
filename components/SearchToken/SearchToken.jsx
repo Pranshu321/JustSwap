@@ -11,44 +11,44 @@ const SearchToken = ({ openToken, tokens, tokenData }) => {
 
   const coin = [
     {
-      img: images.ether,
+      img: "https://cdn.coinranking.com/rk4RKHOuW/eth.svg",
       name: "ETH",
     },
     {
-      img: images.ether,
+      img: "https://cdn.coinranking.com/mAZ_7LwOE/mutli-collateral-dai.svg",
       name: "DAI",
     },
     {
-      img: images.ether,
-      name: "DOG",
+      img: "https://cdn.coinranking.com/H1arXIuOZ/doge.svg",
+      name: "DOGE",
     },
     {
-      img: images.ether,
-      name: "FUN",
+      img: "https://cdn.coinranking.com/4bpYKqV4X/AAVE.png",
+      name: "AAVE",
     },
     {
-      img: images.ether,
-      name: "WETH9",
+      img: "https://cdn.coinranking.com/xcZdYtX6E/okx.png",
+      name: "OKB",
     },
     {
-      img: images.ether,
+      img: "https://cdn.coinranking.com/1heSvUgtl/uniswap-v2.svg?size=48x48",
       name: "UNI",
     },
     {
-      img: images.ether,
-      name: "TIME",
+      img: "	https://cdn.coinranking.com/behejNqQs/trx.svg",
+      name: "TRON",
     },
     {
-      img: images.ether,
-      name: "LOO",
+      img: "	https://cdn.coinranking.com/B1oPuTyfX/xrp.svg",
+      name: "XRP",
     },
     {
-      img: images.ether,
-      name: "OOO",
+      img: "https://cdn.coinranking.com/HJzHboruM/atom.svg",
+      name: "ATOM",
     },
     {
-      img: images.ether,
-      name: "HEY  ",
+      img: "https://cdn.coinranking.com/xh8X8QBss/flow.png",
+      name: "FLOW",
     },
   ];
   return (
@@ -81,11 +81,11 @@ const SearchToken = ({ openToken, tokens, tokenData }) => {
                 setActive(i + 1), tokens({ name: el.name, image: el.img })
               )}
             >
-              <Image
+              <img
                 src={el.img || images.ether}
                 alt="image"
-                width={30}
-                height={30}
+                width={25}
+                height={25}
               />
               {el.name}
             </span>

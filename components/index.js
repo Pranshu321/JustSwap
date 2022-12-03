@@ -8,10 +8,12 @@ import Token from "./Token/Token";
 import AllTokens from "./AllTokens/AllTokens";
 import PoolAdd from "./PoolAdd/PoolAdd";
 import PoolConnect from "./PoolConnect/PoolConnect";
+import HeroSection from "./Hero/Hero";
 
 export {
   Model,
   NavBar,
+  HeroSection,
   SearchToken,
   Toggle,
   TokenList,

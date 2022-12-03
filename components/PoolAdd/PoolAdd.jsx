@@ -158,7 +158,7 @@ const PoolAdd = () => {
                 <input type="text" placeholder="0" />
                 <div className={Style.PoolAdd_box_deposit_box_input}>
                   <p>
-                    <small>UNI</small> Uniswap
+                    <small>JWP</small> JustSwap
                   </p>
                   <p className={Style.PoolAdd_box_deposit_box_input_balance}>
                     Balance: 0.00

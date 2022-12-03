@@ -7,6 +7,7 @@ import close from "./cross.png";
 import etherlogo from "./etherlogo.png";
 import homeicon from "./homeicon.png";
 import lock from "./lock.png";
+import logo from "./mainlogo.jpeg";
 
 export default {
   uniswap,
@@ -14,6 +15,7 @@ export default {
   ether,
   arrow,
   arrowup,
+  logo,
   close,
   etherlogo,
   homeicon,

@@ -11,6 +11,11 @@ import { Model, TokenList } from "../index";
 
 
 const NavBar = () => {
+  const tokendata = [{
+    name: "ETH",
+    symbol: "$",
+    tokenBalance: 30
+  }];
   const menuItems = [
     {
       name: "Swap",
@@ -18,11 +23,11 @@ const NavBar = () => {
     },
     {
       name: "Tokens",
-      link: "/",
+      link: "/Tokens",
     },
     {
       name: "Pools",
-      link: "/",
+      link: "/Pools",
     },
   ];
   //USESTATE
@@ -34,14 +39,16 @@ const NavBar = () => {
       <div className={Style.NavBar_box}>
         <div className={Style.NavBar_box_left}>
           {/* //LOGO IMAGE  */}
-          <div className={Style.NavBar_box_left_img}>
-            <Image src={images.uniswap} alt="logo" width={50} height={50} />
-          </div>
+          <Link href={"/"}>
+            <div className={Style.NavBar_box_left_img}>
+              <Image src={images.logo} style={{ marginBottom: "20px" }} alt="logo" width={150} />
+            </div>
+          </Link>
           {/* MENU ITEMS */}
 
           <div className={Style.NavBar_box_left_menu}>
             {menuItems.map((el, i) => (
-              <Link key={i + 1} href={{ pathname: `${el.name}` }}>
+              <Link key={i + 1} href={{ pathname: `${el.link}` }}>
                 <p className={Style.NavBar_box_left_menu_item}>{el.name}</p>
               </Link>
             ))}
@@ -63,7 +70,7 @@ const NavBar = () => {
             <div className={Style.NavBar_box_right_box_img}>
               <Image src={images.ether} alt="NetWork" height={30} width={30} />
             </div>
-            <p>{"Wetwork Connect"}</p>
+            <p>{"Network Connect"}</p>
           </div>
 
           <button onClick={() => setOpenModel(true)}>Connect</button>
@@ -76,7 +83,7 @@ const NavBar = () => {
 
       {/* //TOTENLIST COMPONENT */}
       {openTokenBox && (
-        <TokenList tokenDate={"hey"} setOpenTokenBox={setOpenTokenBox} />
+        <TokenList tokenDate={tokendata} setOpenTokenBox={setOpenTokenBox} />
       )}
     </div>
   );

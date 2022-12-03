@@ -11,17 +11,18 @@ const Token = ({ setOpenSetting }) => {
     <div className={Style.Token}>
       <div className={Style.Token_box}>
         <div className={Style.Token_box_heading}>
-          <h4>Setting</h4>
-          <Image
-            src={images.close}
+          <h4 style={{ fontSize: "19px" }}>Settings</h4>
+          <img
+            src={"https://www.citypng.com/public/uploads/preview/png-close-x-logo-white-icon-31631914840uc9joqwssz.png"}
             alt="close"
             width={50}
+            style={{ cursor: "pointer" }}
             height={50}
             onClick={() => setOpenSetting(false)}
           />
         </div>
         <p className={Style.Token_box_para}>
-          Slippage tolerance{""}
+          Slippage Tolerance{""}
           <Image src={images.lock} alt="img" width={20} height={20} />
         </p>
 
@@ -37,10 +38,10 @@ const Token = ({ setOpenSetting }) => {
 
         <div className={Style.Token_box_input}>
           <input type="text" placeholder="30" />
-          <button>minutes</button>
+          <button>Minutes</button>
         </div>
 
-        <h2>Interface Setting</h2>
+        <h2 style={{ marginTop: "40px" }}>Interface Settings</h2>
 
         <div className={Style.Token_box_toggle}>
           <p className={Style.Token_box_para}>Transaction deadline</p>
