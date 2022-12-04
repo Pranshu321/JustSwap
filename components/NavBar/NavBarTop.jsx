@@ -74,6 +74,7 @@ const NavBar = () => {
           </div>
 
           <button onClick={() => setOpenModel(true)}>Connect</button>
+          <button onClick={() => setOpenTokenBox(true)}>List</button>
 
           {openModel && (
             <Model setOpenModel={setOpenModel} connectWallet={"connect"} />

@@ -1,4 +1,3 @@
-import uniswap from "./uniswap.png";
 import search from "./Search.png";
 import ether from "./ether.png";
 import arrow from "./arrow.png";
@@ -10,7 +9,6 @@ import lock from "./lock.png";
 import logo from "./mainlogo.jpeg";
 
 export default {
-  uniswap,
   search,
   ether,
   arrow,
