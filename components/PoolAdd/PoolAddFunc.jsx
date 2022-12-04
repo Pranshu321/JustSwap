@@ -4,7 +4,7 @@ import Image from "next/image";
 //INTERNAL IMPORT
 import images from "../../assets";
 import Style from "./PoolAdd.module.css";
-import { Token, SearchToken } from "../../Components/index.js";
+import { Token, SearchToken } from "../index.js";
 
 const PoolAdd = () => {
   const [openModel, setOpenModel] = useState(false);
