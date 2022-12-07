@@ -70,7 +70,7 @@ const NavBar = () => {
             <div className={Style.NavBar_box_right_box_img}>
               <Image src={images.ether} alt="NetWork" height={30} width={30} />
             </div>
-            <p>{"Network Connect"}</p>
+            <p>{"Network"}</p>
           </div>
 
           <button onClick={() => setOpenModel(true)}>Connect</button>

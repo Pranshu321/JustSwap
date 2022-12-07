@@ -1,0 +1,71 @@
+eth_chainId
+eth_accounts
+eth_blockNumber
+eth_chainId (2)
+eth_estimateGas
+eth_getBlockByNumber
+eth_gasPrice
+eth_sendTransaction
+  Contract deployment: BooToken
+  Contract address:    0xf66cfdf074d2ffd6a4037be3a669ed04380aef2b
+  Transaction:         0x4031c96bb467d94871f6357db00468097abf57d13f97c4521220c6120ac0dc25
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            673683 of 673683
+  Block #16134109:     0x6d6a97320db64bfcd891a20564e7e5d0ca811b2352318de4384b4f691ac3ae43
+
+eth_chainId
+eth_getTransactionByHash
+eth_chainId
+eth_getTransactionReceipt
+eth_accounts
+eth_chainId
+eth_estimateGas
+eth_gasPrice
+eth_sendTransaction
+  Contract deployment: LifeToken
+  Contract address:    0xfc4ee541377f3b6641c23cbe82f6f04388290421
+  Transaction:         0xde144782983dc08b7ae9f73b8ceac5d01fbf6c16fd53a4ae5b151d50f96be6a3
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            673699 of 673699
+  Block #16134110:     0x855c05ba1a46059a0a7bfc3467a2ef7ce70e8a5c79cb3bf47420e1deedd940ee
+
+eth_chainId
+eth_getTransactionByHash
+eth_chainId
+eth_getTransactionReceipt
+eth_accounts
+eth_chainId
+eth_estimateGas
+eth_gasPrice
+eth_sendTransaction
+  Contract deployment: SingleSwapToken
+  Contract address:    0x20d7b364e8ed1f4260b5b90c41c2dec3c1f6d367
+  Transaction:         0x998a00eca623f49e8e2ba7e8e98141f8f06dac0b447137104ea6728c00daa172
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            570666 of 570666
+  Block #16134111:     0x8b593e4ea807e096508877191ae1604754df2268a436bb21ff89f547e8ee2960
+
+eth_chainId
+eth_getTransactionByHash
+eth_chainId
+eth_getTransactionReceipt
+eth_accounts
+eth_chainId
+eth_estimateGas
+eth_gasPrice
+eth_sendTransaction
+  Contract deployment: SwapMultiHop
+  Contract address:    0xf5c3953ae4639806fcbcc3196f71dd81b0da4348
+  Transaction:         0xc9aa121746625d7c3d618718c803a3fc8bc4061796ab6c65e03e9bd29ea714eb
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            570378 of 570378
+  Block #16134112:     0xd4a907532eb37e7ac1a1b5b38e96d20018dfdd4bbec470df2668bf8d0a0253fd
+
+eth_chainId
+eth_getTransactionByHash
+eth_chainId
+eth_getTransactionReceipt
