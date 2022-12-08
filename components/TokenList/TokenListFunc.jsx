@@ -6,12 +6,13 @@ import Style from "./TokenList.module.css";
 import images from "../../assets";
 
 const TokenList = ({ tokenDate, setOpenTokenBox }) => {
-  const data = [1, 2, 3, 4, 5, 6, 7];
+  // const data = [1, 2, 3, 4, 5, 6, 7];
 
-  let tokenList = tokenDate.slice(0,tokenDate.length/2);
-  // for (let i = 0; i < tokenDate.length; i++) {
-  //   if (i % 2 == 1) tokenList.push(tokenDate[i]);
-  // }
+  let tokenList = [];
+  tokenDate.sort();
+  for (let i = 0; i < tokenDate.length/2; i++) {
+      tokenList.push(tokenDate[i]);
+  }
 
   return (
     <div className={Style.TokenList}>
@@ -26,7 +27,7 @@ const TokenList = ({ tokenDate, setOpenTokenBox }) => {
       </div>
 
       {tokenList.map((el, i) => (
-        <div key={i+1} className={Style.TokenList_box}>
+        <div key={i + 1} className={Style.TokenList_box}>
           <div className={Style.TokenList_box_info}>
             <p className={Style.TokenList_box_info_symbol}>{el.name}</p>
             <p>
