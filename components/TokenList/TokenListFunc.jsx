@@ -8,10 +8,10 @@ import images from "../../assets";
 const TokenList = ({ tokenDate, setOpenTokenBox }) => {
   const data = [1, 2, 3, 4, 5, 6, 7];
 
-  let tokenList = [];
-  for (let i = 0; i < tokenDate.length; i++) {
-    if (i % 2 == 1) tokenList.push(tokenDate[i]);
-  }
+  let tokenList = tokenDate.slice(0,tokenDate.length/2);
+  // for (let i = 0; i < tokenDate.length; i++) {
+  //   if (i % 2 == 1) tokenList.push(tokenDate[i]);
+  // }
 
   return (
     <div className={Style.TokenList}>
@@ -25,16 +25,16 @@ const TokenList = ({ tokenDate, setOpenTokenBox }) => {
         <h2>Your Token List</h2>
       </div>
 
-      {/* {tokenList.map((el, i) => ( */}
-      <div className={Style.TokenList_box}>
-        <div className={Style.TokenList_box_info}>
-          <p className={Style.TokenList_box_info_symbol}>{"Ethereum"}</p>
-          <p>
-            <span>{"2$"}</span> {"ETH"}
-          </p>
+      {tokenList.map((el, i) => (
+        <div className={Style.TokenList_box}>
+          <div className={Style.TokenList_box_info}>
+            <p className={Style.TokenList_box_info_symbol}>{el.name}</p>
+            <p>
+              <span>{el.tokenBalance}</span> {el.symbol}
+            </p>
+          </div>
         </div>
-      </div>
-      {/* ))} */}
+      ))}
     </div>
   );
 };

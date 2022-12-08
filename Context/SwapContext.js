@@ -29,8 +29,8 @@ export const SwapTokenContextProvider = ({ children }) => {
     const [tokenData, setTokenData] = useState([]);
 
     const addToken = [
-        "0xdB05A386810c809aD5a77422eb189D36c7f24402",
-        "0xbf2ad38fd09F37f50f723E35dd84EEa1C282c5C9",
+        "0x90b97E83e22AFa2e6A96b3549A0E495D5Bae61aF",
+        "0xdb54fa574a3e8c6aC784e1a5cdB575A737622CFf"
     ];
     //FETCH DATA
     const fetchingData = async () => {
@@ -46,17 +46,21 @@ export const SwapTokenContextProvider = ({ children }) => {
             const balance = await provider.getBalance(userAccount);
             const convertBal = BigNumber.from(balance).toString();
             const ethValue = ethers.utils.formatEther(convertBal);
+            console.log(ethValue);
             setEther(ethValue);
 
             //GET NETWORK
             const newtork = await provider.getNetwork();
             setNetworkConnect(newtork.name);
+            // console.log(newtork);
 
             //ALL TOKEN BALANCE AND DATA
             addToken.map(async (el, i) => {
+                console.log(el);
                 //GETTING CONTRACT
                 const contract = new ethers.Contract(el, ERC20, provider);
-                //GETTING BALANCE OF TOKEN
+                // console.log(contract);
+                // GETTING BALANCE OF TOKEN
                 const userBalance = await contract.balanceOf(userAccount);
                 const tokenLeft = BigNumber.from(userBalance).toString();
                 const convertTokenBal = ethers.utils.formatEther(tokenLeft);
@@ -90,10 +94,9 @@ export const SwapTokenContextProvider = ({ children }) => {
         }
     };
 
-    // useEffect(() => {
-    //   fetchingData();
-    // }, []);
-
+    useEffect(() => {
+        fetchingData();
+    }, []);
     //SINGL SWAP TOKEN
     const singleSwapToken = async () => {
         try {
@@ -124,6 +127,7 @@ export const SwapTokenContextProvider = ({ children }) => {
             console.log(error);
         }
     };
+
 
     return (
         <SwapTokenContext.Provider
