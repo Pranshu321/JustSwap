@@ -18,6 +18,8 @@ const NavBar = () => {
     symbol: "$",
     tokenBalance: 30
   }];
+
+  console.log(networkConnect);
   const menuItems = [
     {
       name: "Swap",
@@ -72,7 +74,7 @@ const NavBar = () => {
             <div className={Style.NavBar_box_right_box_img}>
               <Image src={images.ether} alt="NetWork" height={30} width={30} />
             </div>
-            <p>{networkConnect=="Unknown"?"LocalHost":networkConnect}</p>
+            <p>{networkConnect==="unknown"?"LocalHost":networkConnect}</p>
           </div>
 
           {

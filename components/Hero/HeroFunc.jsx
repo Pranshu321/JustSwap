@@ -7,7 +7,7 @@ import images from "../../assets";
 import { Token, SearchToken } from "../index";
 
 //CONTEXT
-// import { SwapTokenContext } from "../../Context/SwapContext";
+import { SwapTokenContext } from "../../Context/SwapContext";
 
 const HeroSection = ({ tokenData }) => {
     //USESTATE
@@ -15,8 +15,8 @@ const HeroSection = ({ tokenData }) => {
     const [openToken, setOpenToken] = useState(false);
     const [openTokensTwo, setOpenTokensTwo] = useState(false);
 
-    //   const { singleSwapToken, connectWallet, account, ether, dai } =
-    //     useContext(SwapTokenContext);
+    const { singleSwapToken, connectWallet, account, ether, dai } =
+        useContext(SwapTokenContext);
 
     //TOKEN 1
     const [tokenOne, setTokenOne] = useState({
@@ -56,7 +56,7 @@ const HeroSection = ({ tokenData }) => {
                             alt="ether"
                         />
                         {tokenOne.name || "ETH"}
-                        <small>{"Ether"}</small>
+                        <small>{ether.slice(0, 7)}</small>
                     </button>
                 </div>
 
@@ -70,12 +70,13 @@ const HeroSection = ({ tokenData }) => {
                             alt="ether"
                         />
                         {tokenTwo.name || "ETH"}
-                        <small>{"Dai"}</small>
+                        <small>{dai.slice(0, 7)}</small>
                     </button>
                 </div>
 
-                {true ? (
+                {account ? (
                     <button
+                        style={{ cursor: "pointer" }}
                         className={Style.HeroSection_box_btn}
                         onClick={() => singleSwapToken()}
                     >
@@ -83,6 +84,7 @@ const HeroSection = ({ tokenData }) => {
                     </button>
                 ) : (
                     <button
+                        style={{ cursor: "pointer" }}
                         onClick={() => connectWallet()}
                         className={Style.HeroSection_box_btn}
                     >

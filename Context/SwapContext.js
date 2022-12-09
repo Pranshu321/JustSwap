@@ -13,7 +13,7 @@ import {
     connectingWithDAIToken,
 } from "../Utils/appFeatures";
 
-import { IWETHABI } from "./constants";
+import { BooTokenAddress, IWETHABI, LifeTokenAddress } from "./constants";
 import ERC20 from "./ERC20.json";
 
 export const SwapTokenContext = React.createContext();
@@ -29,8 +29,8 @@ export const SwapTokenContextProvider = ({ children }) => {
     const [tokenData, setTokenData] = useState([]);
 
     const addToken = [
-        "0x90b97E83e22AFa2e6A96b3549A0E495D5Bae61aF",
-        "0xdb54fa574a3e8c6aC784e1a5cdB575A737622CFf"
+        BooTokenAddress,
+        LifeTokenAddress
     ];
     //FETCH DATA
     const fetchingData = async () => {
@@ -121,6 +121,7 @@ export const SwapTokenContextProvider = ({ children }) => {
             const balance = await dai.balanceOf(account);
             const transferAmount = BigNumber.from(balance).toString();
             const ethValue = ethers.utils.formatEther(transferAmount);
+            // window.location.reload();
             setDai(ethValue);
             console.log("DAI balance:", ethValue);
         } catch (error) {
