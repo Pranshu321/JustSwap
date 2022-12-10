@@ -3,7 +3,7 @@
 .AllTokens_box{
     margin-block: 1rem;
     background-color: #1E1E1E;
-    border: 1px solid #d1f80b53;
+    border: 1px solid #474afc;
     border-radius: .5rem;
 }
 
@@ -12,7 +12,7 @@
     grid-template-columns: .5fr 4fr 2fr 2fr 2fr 2fr;
     align-items: center;
     padding: .5rem 1rem;
-    border-bottom: 1px solid #d1f80b53;
+    border-bottom: 1px solid #474afc;
 }
 
 .AllTokens_box_header p{
