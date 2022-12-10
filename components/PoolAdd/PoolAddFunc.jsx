@@ -5,6 +5,8 @@ import Image from "next/image";
 import images from "../../assets";
 import Style from "./PoolAdd.module.css";
 import { Token, SearchToken } from "../index.js";
+import { IoMdWallet } from "react-icons/io";
+import { BsFillDropletFill } from "react-icons/bs";
 
 const PoolAdd = () => {
   const [openModel, setOpenModel] = useState(false);
@@ -50,7 +52,7 @@ const PoolAdd = () => {
       <div className={Style.PoolAdd_box}>
         <div className={Style.PoolAdd_box_header}>
           <div className={Style.PoolAdd_box_header_left}>
-            <Image src={images.arrowLeft} alt="image" width={30} height={30} />
+            <BsFillDropletFill size={40} color={"#6B6DFF"} />
           </div>
           <div className={Style.PoolAdd_box_header_middle}>
             <p>Add Liqudity</p>
@@ -186,7 +188,7 @@ const PoolAdd = () => {
               <p className={Style.PoolAdd_box_price_right_box_para}>
                 Current Price: 41.1494 Testv4 per WETH
               </p>
-              <Image src={images.wallet} alt="wallet" height={80} width={80} />
+              <IoMdWallet size={40} color={"#6B6DFF"} />
               <h3>Your position will appear here.</h3>
             </div>
 

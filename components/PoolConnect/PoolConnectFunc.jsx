@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import {IoMdWallet} from "react-icons/io"
 //INTERNAL IMPORT
 import Style from "./PoolConnect.module.css";
 import images from "../../assets";
@@ -15,7 +15,7 @@ const PoolConnect = () => {
         </div>
 
         <div className={Style.PoolConnect_box_Middle}>
-          <Image src={images.wallet} alt="wallet" height={80} width={80} />
+          <IoMdWallet size={40} color="#6B6DFF" />
           <p>Your active V3 liquidity positions will appear here.</p>
           <button>Connect Wallet</button>
         </div>
@@ -27,7 +27,7 @@ const PoolConnect = () => {
           </div>
           <div className={Style.PoolConnect_box_info_right}>
             <h5>Top pools</h5>
-            <p>Explore Uniswap Analytics</p>
+            <p>Explore JustSwap Analytics</p>
           </div>
         </div>
       </div>

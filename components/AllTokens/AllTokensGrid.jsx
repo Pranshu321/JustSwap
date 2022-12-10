@@ -3,6 +3,8 @@ import Image from "next/image";
 //INTERNAL IMPORT
 import Style from "./AllTokens.module.css";
 import images from "../../assets";
+import { BsQuestionCircleFill } from "react-icons/bs";
+
 
 const AllTokens = ({ allTokenList }) => {
   return (
@@ -16,16 +18,16 @@ const AllTokens = ({ allTokenList }) => {
           <p className={Style.hide}>
             TVL{" "}
             <small>
-              <Image src={images.question} alt="img" width={15} height={15} />
+              <BsQuestionCircleFill size={20} color={"#6B6DFF"} />
             </small>{" "}
           </p>
           <p className={Style.hide}>
             <small>
-              <Image src={images.arrowPrice} alt="img" width={15} height={15} />
+              <Image src={images.arrow} alt="img" width={15} height={15} />
             </small>{" "}
             Volume{" "}
             <small>
-              <Image src={images.question} alt="img" width={15} height={15} />
+              <BsQuestionCircleFill size={20} color="#6B6DFF" />
             </small>{" "}
           </p>
         </div>

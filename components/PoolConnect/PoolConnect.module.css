@@ -15,7 +15,7 @@
 }
 
 .PoolConnect_box_header p{
-    background-color: #CFF80B;
+    background-color: #6B6DFF;
     padding: .5rem 1rem;
     border-radius: .5rem;
     color: #1E1E1E;
@@ -28,7 +28,7 @@
 }
 
 .PoolConnect_box_Middle button{
-    background-color: #CFF80B;
+    background-color: #6B6DFF;
     color: #1E1E1E;
     border: 0;
     font-size: 1.5rem;
@@ -49,7 +49,7 @@
 
 .PoolConnect_box_info_right,
 .PoolConnect_box_info_left{
-    border: 1px solid #CFF80B;
+    border: 1px solid #6B6DFF;
     padding: .5rem;
     border-radius: .5rem;
 }

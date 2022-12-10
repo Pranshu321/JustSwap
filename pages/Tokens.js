@@ -41,7 +41,7 @@ const Tokens = () => {
         {
             number: 4,
             image: images.etherlogo,
-            name: "Uniswap",
+            name: "JustSwap",
             symbol: "UNI",
             price: "$12,345",
             change: "+ 234.5",
